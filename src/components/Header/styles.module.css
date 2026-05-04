@@ -1,0 +1,45 @@
+  /*O rem é calculado com base no font-size do root. Exemplo: a largura desse icon é de 59 (arrendondado para 60) divide por 16 = 3.6875rem,
+   arredondado para 3.75rem, e por que o 16? Porque o font-size padrão do root (html) é 16px */
+
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container>img {
+    height: 3.75rem;
+  }
+
+  .container>header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.25rem 0;
+  }
+
+  .container>header button {
+    background: transparent;
+    border: none;
+  }
+
+  .container>header img:hover {
+    scale: 1.3;
+  }
+
+  .container>header img {
+    height: 2rem;
+    transition: scale 0.5s;
+  }
+
+  .container>header span {
+    font-size: 1.12rem;
+    color: #9b9b9b;
+  }
+
+  .container>header span strong {
+    font-size: 1.37rem;
+    color: #E8891C;
+  }
