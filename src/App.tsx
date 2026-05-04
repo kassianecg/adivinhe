@@ -126,7 +126,10 @@ export default function App() {
             maxLength={1}
             placeholder="?"
             value={letter}
-            onChange={(e) => setletter(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value.replace(/[^a-zA-ZÀ-ú]/g, "")
+              setletter(value)
+            }}
             onKeyDown={(e) => e.key === "Enter" && handleConfirm()}
           />
           <Button title="Confirmar" onClick={handleConfirm} />
@@ -136,3 +139,4 @@ export default function App() {
     </div>
   )
 }
+

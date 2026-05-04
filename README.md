@@ -20,6 +20,7 @@ Jogo de adivinhação de palavras desenvolvido com React e TypeScript. O jogador
 - Aviso ao tentar usar uma letra já utilizada
 - Confirmação ao reiniciar o jogo
 - Suporte a tecla **Enter** para confirmar o palpite
+- Campo de palpite aceita apenas letras (números e caracteres especiais são bloqueados)
 
 ## Tecnologias
 
